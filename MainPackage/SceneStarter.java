@@ -18,7 +18,7 @@
  of our program.
  **/
 
-import MainPackage.SceneFrame;
+package MainPackage;
 
 public class SceneStarter
 {
