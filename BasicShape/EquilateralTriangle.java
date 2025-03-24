@@ -37,10 +37,6 @@ public class EquilateralTriangle extends Triangle
      */
     public EquilateralTriangle(double xPosition, double yPosition, double rotation, double size, Color color, int direction)
     {
-        double xPositionStart = xPosition - size/2;
-        double yPositionMid = yPosition + direction * Math.sqrt((3 * size * size) / 4);
-        double xPositionEnd = xPosition + size/2;
-
-        super(xPositionStart, yPosition, xPosition, yPositionMid, xPositionEnd, yPosition, xPosition, yPosition, rotation, color);
+        super(xPosition - size/2, yPosition, xPosition, yPosition + direction * Math.sqrt((3 * size * size) / 4), xPosition + size/2, yPosition, xPosition, yPosition, rotation, color);
     }
 }

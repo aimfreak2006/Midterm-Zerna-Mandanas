@@ -39,12 +39,7 @@ public class RightTriangle extends Triangle
 
     public RightTriangle(double xPosition, double yPosition, double rotation, double width, double height, Color color, int direction)
     {
-        double xPositionMid = xPosition + direction*width;
-        double xPivot = xPosition + width / 2;
-        double yPositionEnd = yPosition - height;
-
-        super(xPosition, yPosition, xPositionMid, yPosition, xPosition, yPositionEnd, xPivot, yPosition, rotation, color);
-
+        super(xPosition, yPosition, xPosition + direction*width, yPosition, xPosition, yPosition - height, xPosition + width / 2, yPosition, rotation, color);
     }
 }
 
